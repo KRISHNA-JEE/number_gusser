@@ -1,0 +1,19 @@
+* {
+    background-color: rgba(23, 23, 24, 0.548);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures full screen height */
+}
+#guessField{
+    background-color: white;
+    color: rgb(26, 44, 44);
+    font-style:italic;
+}
