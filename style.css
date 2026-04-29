@@ -17,3 +17,13 @@ body {
     color: rgb(26, 44, 44);
     font-style:italic;
 }
+.gameImage {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 12px auto;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.gameImage:hover {
+    transform: scale(1.05);
+}

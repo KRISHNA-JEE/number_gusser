@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1e1e2e" stroke="#7c3aed" stroke-width="4"/>
+
+  <!-- Floating numbers around the question mark -->
+  <text x="28" y="60" font-size="22" fill="#a78bfa" font-family="Arial, sans-serif" font-weight="bold" opacity="0.7">7</text>
+  <text x="158" y="55" font-size="18" fill="#60a5fa" font-family="Arial, sans-serif" font-weight="bold" opacity="0.7">42</text>
+  <text x="20" y="140" font-size="20" fill="#34d399" font-family="Arial, sans-serif" font-weight="bold" opacity="0.7">13</text>
+  <text x="155" y="148" font-size="22" fill="#f472b6" font-family="Arial, sans-serif" font-weight="bold" opacity="0.7">99</text>
+  <text x="75" y="30" font-size="16" fill="#fbbf24" font-family="Arial, sans-serif" font-weight="bold" opacity="0.7">55</text>
+  <text x="110" y="178" font-size="18" fill="#fb923c" font-family="Arial, sans-serif" font-weight="bold" opacity="0.7">3</text>
+
+  <!-- Central question mark -->
+  <text x="100" y="130" font-size="90" fill="#7c3aed" font-family="Arial, sans-serif" font-weight="bold"
+        text-anchor="middle" dominant-baseline="middle">?</text>
+
+  <!-- Subtle glow behind question mark -->
+  <circle cx="100" cy="105" r="42" fill="#7c3aed" opacity="0.15"/>
+</svg>

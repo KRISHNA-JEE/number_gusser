@@ -5,6 +5,7 @@ const guessSlot = document.querySelector(".guesses");
 const remaining = document.querySelector(".lastResult");
 const lowOrHigh = document.querySelector(".lowOrHigh");
 const startOver = document.querySelector(".resultparas");
+const gameImage = document.querySelector("#gameImage");
 
 const p = document.createElement("p");
 let prevGuess = [];
@@ -32,15 +33,27 @@ function validateGuess(guess) {
 function checkGuess(guess) {
     if (guess === randomNumber) {
         displayMessage(`🎉 Congratulations! You guessed it right!`);
+        setGameImage("win");
         endgame();
     } else if (guessNum === 11) {
         displayMessage(`Game Over! The correct number was ${randomNumber}`);
+        setGameImage("lose");
         endgame();
     } else if (guess < randomNumber) {
         displayMessage(`📉 Too Low! Try Again.`);
     } else {
         displayMessage(`📈 Too High! Try Again.`);
     }
+}
+
+function setGameImage(state) {
+    const images = {
+        game: "images/game.svg",
+        win: "images/win.svg",
+        lose: "images/lose.svg"
+    };
+    gameImage.src = images[state] || images.game;
+    gameImage.alt = state === "win" ? "You win!" : state === "lose" ? "Game over" : "Number guessing game";
 }
 
 function displayMessage(message) {
@@ -69,6 +82,7 @@ function startGame() {
     guessSlot.innerHTML = "";
     remaining.innerHTML = "10";
     lowOrHigh.innerHTML = "";
+    setGameImage("game");
     userInput.removeAttribute("disabled");
     submit.removeAttribute("disabled");
 
