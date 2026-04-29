@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#2e1e1e" stroke="#ef4444" stroke-width="4"/>
+
+  <!-- Sad face circle -->
+  <circle cx="100" cy="95" r="55" fill="#ef4444" opacity="0.2"/>
+  <circle cx="100" cy="95" r="55" fill="none" stroke="#ef4444" stroke-width="4"/>
+
+  <!-- Eyes (X marks) -->
+  <line x1="78" y1="76" x2="90" y2="88" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="76" x2="78" y2="88" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+  <line x1="110" y1="76" x2="122" y2="88" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+  <line x1="122" y1="76" x2="110" y2="88" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Sad mouth -->
+  <path d="M78 115 Q100 100 122 115" fill="none" stroke="#ef4444" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Game Over text -->
+  <text x="100" y="172" font-size="13" fill="#ef4444" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">GAME OVER</text>
+</svg>

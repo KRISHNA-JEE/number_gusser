@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1e2e1e" stroke="#22c55e" stroke-width="4"/>
+
+  <!-- Confetti dots -->
+  <circle cx="45" cy="45" r="5" fill="#fbbf24"/>
+  <circle cx="160" cy="40" r="4" fill="#f472b6"/>
+  <circle cx="30" cy="130" r="4" fill="#60a5fa"/>
+  <circle cx="170" cy="135" r="5" fill="#a78bfa"/>
+  <circle cx="80" cy="170" r="4" fill="#34d399"/>
+  <circle cx="130" cy="165" r="3" fill="#fb923c"/>
+  <circle cx="155" cy="80" r="3" fill="#fbbf24"/>
+  <circle cx="42" cy="90" r="3" fill="#f472b6"/>
+
+  <!-- Trophy base -->
+  <rect x="82" y="148" width="36" height="8" rx="3" fill="#fbbf24"/>
+  <rect x="74" y="155" width="52" height="8" rx="3" fill="#f59e0b"/>
+
+  <!-- Trophy cup -->
+  <path d="M68 70 Q68 130 100 138 Q132 130 132 70 Z" fill="#fbbf24"/>
+  <path d="M68 70 Q68 130 100 138 Q132 130 132 70 Z" fill="url(#trophyGrad)" opacity="0.4"/>
+
+  <!-- Trophy handles -->
+  <path d="M68 80 Q48 80 50 100 Q52 118 68 115" fill="none" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M132 80 Q152 80 150 100 Q148 118 132 115" fill="none" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Shine on trophy -->
+  <path d="M82 80 Q88 100 84 120" fill="none" stroke="#fff" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Star on trophy -->
+  <text x="100" y="115" font-size="28" text-anchor="middle" fill="#fff" font-family="Arial">★</text>
+
+  <!-- Celebration text -->
+  <text x="100" y="58" font-size="13" fill="#22c55e" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">YOU WIN!</text>
+
+  <defs>
+    <linearGradient id="trophyGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+</svg>
