@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#4a1a1a" stroke="#e53935" stroke-width="4"/>
+  <!-- Sad face circle -->
+  <circle cx="100" cy="95" r="55" fill="#e53935" opacity="0.3"/>
+  <!-- Eyes (X marks) -->
+  <line x1="78" y1="73" x2="88" y2="83" stroke="#e53935" stroke-width="5" stroke-linecap="round"/>
+  <line x1="88" y1="73" x2="78" y2="83" stroke="#e53935" stroke-width="5" stroke-linecap="round"/>
+  <line x1="112" y1="73" x2="122" y2="83" stroke="#e53935" stroke-width="5" stroke-linecap="round"/>
+  <line x1="122" y1="73" x2="112" y2="83" stroke="#e53935" stroke-width="5" stroke-linecap="round"/>
+  <!-- Sad mouth -->
+  <path d="M78 115 q22 -18 44 0" fill="none" stroke="#e53935" stroke-width="5" stroke-linecap="round"/>
+  <!-- Sweat drop -->
+  <ellipse cx="140" cy="75" rx="5" ry="8" fill="#4a90d9" opacity="0.8"/>
+  <!-- Game Over text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle" fill="#e53935">GAME OVER</text>
+  <!-- Decorative lines -->
+  <line x1="20" y1="185" x2="70" y2="185" stroke="#e53935" stroke-width="2" opacity="0.5"/>
+  <line x1="130" y1="185" x2="180" y2="185" stroke="#e53935" stroke-width="2" opacity="0.5"/>
+</svg>
