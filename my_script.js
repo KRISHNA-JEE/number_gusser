@@ -5,6 +5,7 @@ const guessSlot = document.querySelector(".guesses");
 const remaining = document.querySelector(".lastResult");
 const lowOrHigh = document.querySelector(".lowOrHigh");
 const startOver = document.querySelector(".resultparas");
+const gameImage = document.querySelector("#gameImage");
 
 const p = document.createElement("p");
 let prevGuess = [];
@@ -32,9 +33,13 @@ function validateGuess(guess) {
 function checkGuess(guess) {
     if (guess === randomNumber) {
         displayMessage(`🎉 Congratulations! You guessed it right!`);
+        gameImage.src = "images/win.svg";
+        gameImage.alt = "You win!";
         endgame();
     } else if (guessNum === 11) {
         displayMessage(`Game Over! The correct number was ${randomNumber}`);
+        gameImage.src = "images/lose.svg";
+        gameImage.alt = "Game over";
         endgame();
     } else if (guess < randomNumber) {
         displayMessage(`📉 Too Low! Try Again.`);
@@ -71,6 +76,8 @@ function startGame() {
     lowOrHigh.innerHTML = "";
     userInput.removeAttribute("disabled");
     submit.removeAttribute("disabled");
+    gameImage.src = "images/question.svg";
+    gameImage.alt = "Guess the number";
 
     // Remove the restart button only if it exists
     if (p.parentNode) {
